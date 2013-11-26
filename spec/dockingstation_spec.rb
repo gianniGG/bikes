@@ -8,6 +8,7 @@ end
 
 let(:bike) {Bike.new}
 let(:station) {DockingStation.new(:capacity => 20)}
+
 	specify "it should accept a bike" do
 	expect(station.bike_count).to eq(0)
 	# let's dock a bike into the station
@@ -41,5 +42,5 @@ specify "it should provide the list of available bikes" do
   expect(station.available_bikes).to eq([working_bike])
   end
 
-  
+
 end
