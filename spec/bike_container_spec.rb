@@ -18,4 +18,8 @@ describe BikeContainer do
     # now we expect the holder to have 1 bike
     expect(holder.bike_count).to eq(1)
   end
+
+  specify "empty should be true when BikeContainer is true" do
+  expect(holder.empty?).to be_true
+  end 
 end
